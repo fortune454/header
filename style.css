@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  background: #f4f4f4;
+}
+
+#grid-container {
+  width: 100%;
+  background: white;
+  width: 100% !important;
+
+  .blog-card {
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+
+    .blog-image:hover img {
+      transform: scale(1.1);
+    }
+
+    .blog-image {
+      width: 100%;
+      height: 50%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s;
+      }
+    }
+
+    .blog-info {
+      margin-top: 10px;
+
+      .identity {
+        font-size: 16px;
+        font-weight: 600;
+        color: #585555;
+      }
+
+      .title {
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .body {
+        font-size: 14px;
+        font-weight: 700;
+        color: #585555;
+      }
+
+      .tags-con {
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: flex-start;
+
+        .tag {
+          font-size: 12px;
+          font-weight: normal;
+          padding: 5px 8px;
+          border-radius: 15px;
+          border: 1px solid #aaa;
+          margin-block: 10px;
+        }
+      }
+    }
+  }
+}
